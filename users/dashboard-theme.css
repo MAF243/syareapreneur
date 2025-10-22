@@ -1,0 +1,372 @@
+/* ====== Branding & Base ====== */
+:root {
+  --primary: #00796B;
+  /* hijau tua */
+  --primary-600: #0a6b5c;
+  --mint: #4DB6AC;
+  /* hijau muda */
+  --ink: #1f2937;
+  /* gray-800 */
+  --muted: #6b7280;
+  /* gray-500 */
+  --line: #eef1f5;
+  --bg: #f7f7f8;
+  --radius: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1000px 500px at 10% -10%, #e8f5f3 0%, transparent 60%),
+    radial-gradient(800px 450px at 110% 10%, #f0f7ff 0%, transparent 60%),
+    var(--bg);
+}
+
+/* ====== Page title ====== */
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 18px;
+}
+
+.page-title .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--mint));
+  box-shadow: 0 0 0 6px rgba(0, 121, 107, .12);
+}
+
+/* ====== Card polish ====== */
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .06);
+}
+
+.card .card-body {
+  padding: 22px;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #0b342f;
+}
+
+/* Kartu clean util */
+.card-clean {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+/* Status card */
+.status {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.status .icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--primary), var(--mint));
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 121, 107, .25);
+}
+
+.status h5 {
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.status p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Badges selaras tema */
+.badge-success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-danger {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-secondary {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.badge-soft {
+  font-size: .72rem;
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: #e7fffb;
+}
+
+/* CTA */
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background: var(--primary-600);
+  border-color: var(--primary-600);
+}
+
+.btn-soft {
+  background: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.btn-soft:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Variasi outline hijau tua (untuk Testimoni / Saran & Masukan) */
+.btn-outline-deep {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+.btn-outline-deep:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Lists */
+.list-clean {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.list-clean li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+/* Chart / Map wrappers */
+.chart-wrap {
+  height: 300px;
+}
+
+#map {
+  height: 400px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.map-box,
+#map {
+  height: 400px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+/* Utilities */
+.text-muted-600 {
+  color: var(--muted);
+}
+
+/* ====== KPI mini ====== */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.kpi {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+.kpi-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary), var(--mint));
+  box-shadow: 0 8px 18px rgba(0, 121, 107, .25);
+}
+
+.kpi-label {
+  font-size: 12px;
+  letter-spacing: .3px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.kpi-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0b342f;
+  line-height: 1.1;
+}
+
+.kpi-sub {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+}
+
+.kpi.disabled {
+  opacity: .6;
+}
+
+.kpi .cta-mini {
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 4px
+}
+
+/* CTA “aktifkan peran” (di kartu KPI peminjam) */
+.pill-cta {
+  border: 1px dashed #93c5c6;
+  background: #f0fdf4;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+/* ====== Sidebar profesional ====== */
+/* dukung kedua kelas lama & baru */
+.sidebar-gradient,
+.sidebar-pro {
+  background: linear-gradient(180deg, #0f766e 0%, #0b5e55 100%) !important;
+}
+
+.sidebar-gradient .sidebar-brand,
+.sidebar-pro .sidebar-brand {
+  padding: 22px 0
+}
+
+.sidebar-gradient .nav-item .nav-link,
+.sidebar-pro .nav-item .nav-link {
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+.sidebar-gradient .nav-item .nav-link i,
+.sidebar-pro .nav-item .nav-link i {
+  width: 22px
+}
+
+.sidebar-gradient .nav-item .nav-link:hover,
+.sidebar-pro .nav-item .nav-link:hover {
+  background: rgba(255, 255, 255, .12)
+}
+
+.sidebar-gradient .nav-item .nav-link.active,
+.sidebar-pro .nav-item .nav-link.active {
+  background: #fff;
+  color: #0f766e;
+  font-weight: 700;
+}
+
+.sidebar-pro .nav-item .nav-link.disabled,
+.sidebar-gradient .nav-item .nav-link.disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.sidebar-pro .locked-hint,
+.sidebar-gradient .locked-hint {
+  font-size: 12px;
+  color: rgba(255, 255, 255, .85);
+  padding: 0 14px 8px 46px;
+}
+
+.sidebar-pro .locked-hint a,
+.sidebar-gradient .locked-hint a {
+  color: #c8fff7;
+  text-decoration: underline;
+}
+
+/* ====== Modal aktifkan peran ====== */
+#roleModal .modal-content {
+  border-radius: 16px;
+}
+
+#roleModal .btn {
+  border-radius: 12px;
+}
+
+/* ====== Misc small tweaks ====== */
+.table> :not(caption)>*>* {
+  vertical-align: middle;
+}
+
+hr {
+  opacity: .12;
+}
+
+.wa-link .wa-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, .25);
+}
+
+.wa-link .wa-chip i {
+  font-size: 1rem
+}
+
+.wa-link:hover .wa-chip {
+  filter: brightness(.95);
+  text-decoration: none;
+}
